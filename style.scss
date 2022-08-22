@@ -1,0 +1,131 @@
+@font-face {
+    font-family: "TT Lakes Regular";
+    src: url(./fonts/TTLakes-Regular.woff) format('woff');
+}
+
+@font-face {
+    font-family: "TTLakes Bold";
+    src: url(./fonts/TTLakes-Bold.woff) format('woff');
+}
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+.sidebar {
+    font-family: 'TT Lakes Regular';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 320px;
+    height: 100vh;
+
+    background-color: rgb(244, 244, 244);
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 78px;
+}
+
+.box-one {
+    display: flex;
+    width: 178px;
+    height: 89px;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 17px;
+
+    // &__icon-hover {
+    //     :hover {
+    //         opacity: 0.4;
+    //     }
+
+    //     transition: all 0.4s ease;
+    // }
+}
+
+.box-two {
+    align-self: center;
+}
+
+.divider {
+    position: absolute;
+    left: 0;
+    top: 102px;
+
+}
+
+.main-menu {
+    width: 223px;
+    height: 438px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+
+    &__element {
+        padding-left: 24px;
+    }
+
+    &__element--check {
+        color: #7E7E82;
+    }
+}
+
+.footer {
+    position: absolute;
+    bottom: 32px;
+    left: 24px;
+    width: 223px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 16px;
+
+    &__icons {
+        display: flex;
+        justify-content: flex-start;
+        gap: 16px;
+
+    }
+
+
+
+    &__number {
+        font-family: 'TTLakes Bold';
+        font-size: 24px;
+
+
+    }
+
+    &__languages {
+        display: flex;
+        gap: 7px;
+        margin-top: 24px;
+
+        :first-child {
+            color: #7E7E82;
+        }
+    }
+}
+
+.button {
+    border: 0;
+
+    :hover {
+        opacity: 0.4;
+
+        transition: all 0.4s ease;
+    }
+}
