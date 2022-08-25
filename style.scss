@@ -66,20 +66,31 @@
 
 .main-menu {
     width: 223px;
-    height: 438px;
+    height: 285px;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 32px;
+    gap: 16px;
 
     &__element {
         padding-left: 24px;
     }
 
-    &__element--check {
-        color: #7E7E82;
+    // &__element--check {
+    //     color: #7E7E82;
+    // }
+
+    &__button {
+        border: none;
+        outline: none;
+        background-color: transparent;
+
+        &:focus {
+            color: #7E7E82;
+        }
     }
+
 }
 
 .footer {
@@ -106,7 +117,28 @@
         font-family: 'TTLakes Bold';
         font-size: 24px;
 
+        a {
+            text-decoration: none;
+            color: #1B1C21;
 
+            &:focus {
+                outline-width: 0 0 1px 0;
+                outline-color: rgb(191, 191, 191);
+            }
+        }
+    }
+
+    &__email {
+
+        a {
+            text-decoration: none;
+            color: #1B1C21;
+
+            &:focus {
+                outline-width: 0 0 1px 0;
+                outline-color: rgb(191, 191, 191);
+            }
+        }
     }
 
     &__languages {
@@ -114,18 +146,39 @@
         gap: 7px;
         margin-top: 24px;
 
-        :first-child {
-            color: #7E7E82;
+        & button {
+            border: none;
+            outline: none;
+            background-color: transparent;
+            border: 1px solid transparent;
+
+            &:first-child {
+                color: #7E7E82;
+            }
+
+            &:focus {
+                border: 1px solid rgb(191, 191, 191);
+
+            }
         }
+
     }
 }
 
 .button {
     border: 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
 
+    &:focus,
     :hover {
         opacity: 0.4;
 
-        transition: all 0.4s ease;
+        transition: all 0.5s ease;
     }
+}
+
+.button-selected {
+    color: #7E7E82;
 }
