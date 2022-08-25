@@ -62,9 +62,10 @@
   border: none;
   outline: none;
   background-color: transparent;
+  border: 1px solid transparent;
 }
 .main-menu__button:focus {
-  color: #7E7E82;
+  border: 1px solid #7E7E82;
 }
 
 .footer {

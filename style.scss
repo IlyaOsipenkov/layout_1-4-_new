@@ -87,9 +87,10 @@
         border: none;
         outline: none;
         background-color: transparent;
+        border: 1px solid transparent;
 
         &:focus {
-            color: #7E7E82;
+            border: 1px solid #7E7E82;
         }
     }
 
