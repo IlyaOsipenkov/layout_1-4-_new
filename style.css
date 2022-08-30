@@ -63,6 +63,7 @@
   outline: none;
   background-color: transparent;
   border: 1px solid transparent;
+  cursor: pointer;
 }
 .main-menu__button:focus {
   border: 1px solid #7E7E82;
@@ -127,6 +128,7 @@
   border: none;
   outline: none;
   background-color: transparent;
+  cursor: pointer;
 }
 .button:focus,
 .button :hover {
